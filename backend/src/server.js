@@ -19,8 +19,10 @@ if (ENV.NODE_ENV==="production"){
         res.sendFile(path.join(__dirname,"../admin/dist"))
     })
 }
-app.listen(3000,()=> {
-    console.log("server is running")
-    console.log(ENV.DB_URL)
-    connectDB();
-})
+const startServer = async ()=>{
+    await connectDB();
+    app.listen(ENV.PORT,()=>{
+        console.log("Server running!");
+    })
+}
+startServer();
