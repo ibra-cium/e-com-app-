@@ -1,0 +1,30 @@
+{
+  "name": "ecom-mobile-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+    
+  },
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix admin && npm run build --prefix admin",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibra-cium/e-com-app-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ibra-cium/e-com-app-/issues"
+  },
+  "homepage": "https://github.com/ibra-cium/e-com-app-#readme",
+  "dependencies": {
+    "admin": "^1.4.1",
+    "prefix": "^1.0.0"
+  }
+}
